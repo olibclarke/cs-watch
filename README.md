@@ -90,3 +90,13 @@ Slack version includes: - status emoji - structured formatting
 -   Works best when run on CryoSPARC master node
 -   Notifications only trigger on **state transitions after script
     start**
+- You may find it useful to set this up as a bash alias, e.g. for Pushover:
+  `alias cswatch_pushover='python3 ~/cs_watch.py --pushover-token YOUR_TOKEN --pushover-user YOUR_USER_KEY'`
+  
+  Or for Slack:
+  
+  `alias cswatch_slack='python3 ~/cs_watch.py --slack-webhook "https://hooks.slack.com/services/XXX/YYY/ZZZ"'`
+  
+  So you can then run something like:
+
+  `cswatch_pushover P40 W1 --all-active` and it will just work, without having to remember the app tokens etc.
