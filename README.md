@@ -1,7 +1,7 @@
 # CryoSPARC Job Watcher (cs_watch.py)
 
 A lightweight script to monitor CryoSPARC jobs and send notifications
-when jobs **complete**, **fail**, or are **killed**. Used Pushover or Slack to handle notifications.
+when jobs **complete**, **fail**, or are **killed**. Uses [Pushover](https://pushover.net) or Slack to handle notifications.
 
 ------------------------------------------------------------------------
 
